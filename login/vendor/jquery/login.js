@@ -1,23 +1,22 @@
 $(document).ready(function(){
 $("#login").click(function(){
-var username = $("#username").val();
+var mobile = $("#mobile").val();
 var password = $("#password").val();
 
-console.log(username);
-console.log(password);
+
 // Checking for blank fields.
-if( username =='' || password ==''){
+if( mobile =='' || password ==''){
 $('input[type="text"],input[type="password"]').css("border","2px solid red");
 $('input[type="text"],input[type="password"]').css("box-shadow","0 0 3px red");
 alert("Please fill all fields...!!!!!!");
 }else {
-$.post("login.php",{ username: username, password:password},
+$.post("login.php",{ mobile: mobile, password:password},
 function(data) {
-if(data=='Invalid username.......') {
+if(data=='Invalid mobile.......') {
 $('input[type="text"]').css({"border":"2px solid red","box-shadow":"0 0 3px red"});
 $('input[type="password"]').css({"border":"2px solid #00F5FF","box-shadow":"0 0 5px #00F5FF"});
 alert(data);
-}else if(data=='username or Password is wrong...!!!!'){
+}else if(data=='mobile or Password is wrong...!!!!'){
 $('input[type="text"],input[type="password"]').css({"border":"2px solid red","box-shadow":"0 0 3px red"});
 alert(data);
 } else if(data=='Successfully Logged in...'){
