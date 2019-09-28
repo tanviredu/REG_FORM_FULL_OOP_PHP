@@ -12,7 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <script src="vendor/jquery/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="vendor/jquery/login.js"></script>
 
 
@@ -64,10 +64,10 @@ body {
     <div class="card-body">
       <h3 class="card-title"> Food Service Login</h3>
         <!-- form starts here-->
-    <form class="form" method="POST" action="#">
+    <form class="form" method="post" action="#">
           <div class="form-group">
             <label ><b>Mobile</b></label>
-            <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter mobile ">
+            <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Enter mobile ">
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput2"><b>Password</b></label>
@@ -75,7 +75,7 @@ body {
         </div>
         <div class="form-group">
               
-              <input type="submit" id="login" name="login" value="login" class="btn btn-primary btn-lg btn-block" >
+              <input type="button" id="login" name="login" value="login" class="btn btn-primary btn-lg btn-block" >
               
         </div>
 </form>
@@ -98,3 +98,5 @@ body {
 </body>
 
 </html>
+
+
