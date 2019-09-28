@@ -3,8 +3,8 @@ $(document).ready(function(){
         // when the click function is triggered
         var mobile = $("#mobile").val();
         var password = $("#password").val();
-        console.log(mobile);
-        console.log(password);
+        //console.log(mobile);
+        //console.log(password);
 
 // Checking for blank fields.
     if( mobile =='' || password ==''){ // if there is no entry
